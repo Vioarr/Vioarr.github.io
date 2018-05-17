@@ -1,0 +1,21 @@
+body {
+	background-color: #EEDD82;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-style: Helvetica;
+
+}
+
+#this {
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	top: 25%;
+	font-family: Helvetica;
+}
+
+a {
+	text-decoration: none;
+}
