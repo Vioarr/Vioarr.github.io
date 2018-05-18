@@ -1,17 +1,10 @@
 ---
 author: "Elijah Bedassie"
 date: 2018-05-15
-title: "I'm Gay"
-tags: [
-    "comingout",
-	"hitler",
-	"trump",
-	"imwithdoug",
-	"impeachwynne",
-]
-categories: [
-    "Politics",
-]
+description: ""
+featured_image: "/images/other.jpg"
+tags: ["impeach wynne"]
+title: "Gibberish"
 ---
 
 
