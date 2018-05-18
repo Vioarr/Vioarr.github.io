@@ -1,6 +1,6 @@
 ---
-title: "Cool Kids Club"
+title: "Freeze Peach"
 featured_image: '/images/hero.jpg'
-description: "I'm a website!"
+description: "Reaching minds, touching children."
 ---
-Put stuff here Elijah ok
+

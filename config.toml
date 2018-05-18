@@ -1,12 +1,12 @@
-title = "Notre-Dame de Paris"
-baseURL = "https://example.com"
+title = "UOSFS"
+baseURL = ""
 languageCode = "en-us"
 theme = "gohugo-theme-ananke"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
 
@@ -17,7 +17,7 @@ enableRobotsTXT = true
 
 [params]
   favicon = ""
-  description = "I'm a website"
+  description = "cake"
   facebook = ""
   twitter = "https://twitter.com/GoHugoIO"
   instagram = ""
