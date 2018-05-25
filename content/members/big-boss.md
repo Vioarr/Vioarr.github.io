@@ -1,0 +1,8 @@
+---
+title: Big Boss
+date: 1986-08-10
+---
+
+{{<figure src="/img/TPPBigBossPP.png" title="The man himself">}}
+
+**Big Boss**, real name **John**,[[3\]](http://metalgear.wikia.com/wiki/Big_Boss#cite_note-MGS4DB-2) also known as **Jack**, and formerly known as **Naked Snake**, **Vic Boss**[[4\]](http://metalgear.wikia.com/wiki/Big_Boss#cite_note-3)[[5\]](http://metalgear.wikia.com/wiki/Big_Boss#cite_note-4)[[6\]](http://metalgear.wikia.com/wiki/Big_Boss#cite_note-Vic_Boss-5), **Ishmael**, **Saladin,** or simply **Snake**, was a renowned special forces operative and [mercenary](http://metalgear.wikia.com/wiki/Mercenary) commander. He founded [U.S. Army](http://metalgear.wikia.com/wiki/United_States_Army) Special Forces Unit [FOXHOUND](http://metalgear.wikia.com/wiki/FOXHOUND), along with the mercenary company [Militaires Sans Frontières](http://metalgear.wikia.com/wiki/Militaires_Sans_Fronti%C3%A8res), and was one of the founding members of [the Patriots](http://metalgear.wikia.com/wiki/The_Patriots). Big Boss later established the military states of [Outer Heaven](http://metalgear.wikia.com/wiki/Outer_Heaven)and [Zanzibar Land](http://metalgear.wikia.com/wiki/Zanzibar_Land) as bases for his companies, in order to realize his ambitions of creating a nation for soldiers. Considered by some as "The Greatest Warrior of the 20th Century," he earned such monikers as "the Legendary Soldier"[[7\]](http://metalgear.wikia.com/wiki/Big_Boss#cite_note-6) and "the Legendary Mercenary,"[[8\]](http://metalgear.wikia.com/wiki/Big_Boss#cite_note-7) feared in combat by both friend and foe as a hero and a madman. 
