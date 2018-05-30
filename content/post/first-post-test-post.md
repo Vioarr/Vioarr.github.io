@@ -1,8 +1,8 @@
 ---
-title: "Gibberish"
+title: "The Curious Incident of the Dog in the Night-Time"
 date: 2018-05-15
 featured_image: '/images/other.jpg'
-tags: ["impeach wynne"]
+tags: ["Newsletter 1"]
 ---
 
 

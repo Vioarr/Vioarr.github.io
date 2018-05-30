@@ -17,9 +17,9 @@ enableRobotsTXT = true
 
 [params]
   favicon = ""
-  description = "cake"
-  facebook = ""
-  twitter = "https://twitter.com/GoHugoIO"
+  description = "follow us!"
+  facebook = "https://www.facebook.com/uottawasfs/"
+  twitter = "https://twitter.com"
   instagram = ""
   youtube = ""
   github = ""
