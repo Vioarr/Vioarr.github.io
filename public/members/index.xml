@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Members on UOSFS</title>
+    <link>/members/</link>
+    <description>Recent content in Members on UOSFS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Sep 1998 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/members/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ben Vokey</title>
+      <link>/members/ben-vokey/</link>
+      <pubDate>Wed, 30 Sep 1998 00:00:00 +0000</pubDate>
+      
+      <guid>/members/ben-vokey/</guid>
+      <description>Sample bio.</description>
+    </item>
+    
+    <item>
+      <title>Big Boss</title>
+      <link>/members/big-boss/</link>
+      <pubDate>Sun, 10 Aug 1986 00:00:00 +0000</pubDate>
+      
+      <guid>/members/big-boss/</guid>
+      <description>The man himself   Big Boss, real name John,[3] also known as Jack, and formerly known as Naked Snake, Vic Boss[4][5][6], Ishmael, Saladin, or simply Snake, was a renowned special forces operative and mercenary commander. He founded U.S. Army Special Forces Unit FOXHOUND, along with the mercenary company Militaires Sans Frontières, and was one of the founding members of the Patriots. Big Boss later established the military states of Outer Heavenand Zanzibar Land as bases for his companies, in order to realize his ambitions of creating a nation for soldiers.</description>
+    </item>
+    
+    <item>
+      <title>Elijah Bedassie</title>
+      <link>/members/elijah-bedassie/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>/members/elijah-bedassie/</guid>
+      <description>Another placeholder bio.</description>
+    </item>
+    
+  </channel>
+</rss>

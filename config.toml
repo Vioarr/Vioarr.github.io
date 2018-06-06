@@ -1,14 +1,38 @@
-title = "UOSFS"
-baseURL = "/"
+title = "uOSFS"
 languageCode = "en-us"
 theme = "ananke"
+baseURL = "/"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
+
+    
 SectionPagesMenu = "main"
 Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    title = "uOttawa Students for Free Speech"
+    weight = 1
+    [languages.en.params]
+      linkedin = "english-link"
+      
+  [languages.fr]
+    copyright = "Tout est à moi"
+    title = "Étudiants de l’uOttawa pour la Liberté d’Expression"
+    weight = 2
+    [languages.fr.params]
+      linkedin = "lien-francais"
+    [languages.fr.sitemap]
+      changefreq = "monthly"
+      priority = 0.5
+      filename = "sitemap.xml"
+    
+      [languages.fr.params.navigation]
+        help = "Aide"
+
 
 [sitemap]
   changefreq = "monthly"
