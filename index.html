@@ -11,10 +11,10 @@
 			<nav>
 				<ul>
 					<li class="pull-left current">
-						<a href="https://vioarr.github.io">home</a>
+						<a href="https://vioarr.github.io">~/home</a>
 					</li>
 					<li class="pull-right header-text">
-						the scalp is a 3D printer for hair
+						the scalp is just a 3D printer for hair
 					</li>
 				</ul>
 			</nav>
@@ -31,50 +31,57 @@
 			<p>Since none of us have anything better to do these days you can help me out by
 			looking at these websites down here and answering the questionnaire below about their design.</p>
 			<div style="text-align: center;">
-				<a target="_blank" href="https://time.gov" title="time.gov">
+				<a href="https://time.gov" title="time.gov" style="color: white">
 					<img class="thumbnail" src="timegov.png" alt="time.gov">
 				</a>
-				<a target="_blank" href="https://wikipedia.org" title="wikipedia.org">
+				<a href="https://wikipedia.org" title="wikipedia.org" style="color: white">
 					<img class="thumbnail" src="wikipedia.png" alt="wikipedia.png">
 				</a>
-				<a target="_blank" href="https://dannarchy.com" title="dannarchy.com">
+				<a href="https://dannarchy.com" title="dannarchy.com" style="color: white">
 					<img class="thumbnail" src="dannarchy.png" alt="dannarchy.png">
 				</a>
 			</div>
 			<hr>
-
-			<h3 id="Quick Questionnaire">Quick Questionnaire</h3>
-			<ul>
-				<form>
-					<p>What was your favourite website?</p>
-					<input type="radio" id="time.gov" name="website" value="time.gov">
-					<label for="time.gov">time.gov</label><br>
-					<input type="radio" id="wikipedia.org" name="website" value="wikipedia.org">
-					<label for="wikipedia.org">wikipedia.org</label><br>
-					<input type="radio" id="dannarchy.com" name="website" value="dannarchy.com">
-					<label for="dannarchy.com">dannarchy.com</label><br>
-					
-					<p>Would you go back to any of these websites? Select all that apply.</p>
-					<input type="checkbox" id="time.gov" name="time.gov" value="time.gov">
-					<label for="time.gov">time.gov</label><br>
-					<input type="checkbox" id="wikipedia.org" name="wikipedia.org" value="wikipedia.org">
-					<label for="wikipedia.org">wikipedia.org</label><br>
-					<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-					<label for="vehicle3"> I have a boat</label><br> 
-					
-					<p>Name: <input type="text" name="name"></p>
-					
-					<p>Gender:</p>
-					<div class="small-selection">
-						<select size="4">
+			<div class="questions">
+				<h3 id="Quick Questionnaire">Quick Questionnaire</h3>
+				<ul>
+					<form>
+						<p>Name: <input type="text" name="name">
+						<br>
+						Gender:
+						<select>
 						<option>Male</option>
 						<option>Female</option>
 						<option>Other</option>
 						<option>Multiple</option>
 						</select>
-					</div>
-				</form>
-			</ul>
+						</p>
+						<p>What was your favourite website?</p>
+						<input type="radio" id="time.gov" name="website" value="time.gov">
+						<label for="time.gov">time.gov</label><br>
+						<input type="radio" id="wikipedia.org" name="website" value="wikipedia.org">
+						<label for="wikipedia.org">wikipedia.org</label><br>
+						<input type="radio" id="dannarchy.com" name="website" value="dannarchy.com">
+						<label for="dannarchy.com">dannarchy.com</label><br>
+						
+						<p>Would you go back to any of these websites? Select all that apply.</p>
+						<input type="checkbox" id="time.gov" name="time.gov" value="time.gov">
+						<label for="time.gov">time.gov</label><br>
+						<input type="checkbox" id="wikipedia.org" name="wikipedia.org" value="wikipedia.org">
+						<label for="wikipedia.org">wikipedia.org</label><br>
+						<input type="checkbox" id="dannarchy.com" name="dannarchy.com" value="dannarchy.com">
+						<label for="dannarchy.com">dannarchy.com</label><br><br>
+						
+						<label for="rating">How is this website? (between 1 and 10):</label><br>
+						<input type="range" id="rating" name="rating" min="1" max="10">
+						
+						<p>Comments:</p>
+						<textarea rows="7" cols="60"></textarea><br>
+						<input type="submit" value="Submit"/>
+						<input type="reset" value="Reset"/>
+					</form>
+				</ul>
+			</div>
 		</div>
 		<footer>
 			<hr>
