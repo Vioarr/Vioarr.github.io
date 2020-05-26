@@ -1,6 +1,84 @@
 <!DOCTYPE html>
-<html>
-	<center>
-		<img src="mission_accomplished.jpg"></img>
-	</center>
+<html lang="en-us">
+	<head>
+		<link rel="stylesheet" href="index.css">
+		<meta charset="utf-8">
+		<meta name="description" content="Small website for lab 1 of SEG3125">
+		<title>CSI Questionnaire</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li class="pull-left current">
+						<a href="https://vioarr.github.io">home</a>
+					</li>
+					<li class="pull-right header-text">
+						the scalp is a 3D printer for hair
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<br>
+
+		<div class="content-wrapper">
+			<p style="text-align: center;"><img id="deulists" src="fencing.gif"></p>
+			<h2 id="Title" style="text-align: center;">What makes good design?</h2>
+			<p>More specifically what makes good web design? 
+			One of the reasons I'm taking this course is because I haven't figured out an answer for myself yet.
+			</p>
+			<p>Since none of us have anything better to do these days you can help me out by
+			looking at these websites down here and answering the questionnaire below about their design.</p>
+			<div style="text-align: center;">
+				<a target="_blank" href="https://time.gov" title="time.gov">
+					<img class="thumbnail" src="timegov.png" alt="time.gov">
+				</a>
+				<a target="_blank" href="https://wikipedia.org" title="wikipedia.org">
+					<img class="thumbnail" src="wikipedia.png" alt="wikipedia.png">
+				</a>
+				<a target="_blank" href="https://dannarchy.com" title="dannarchy.com">
+					<img class="thumbnail" src="dannarchy.png" alt="dannarchy.png">
+				</a>
+			</div>
+			<hr>
+
+			<h3 id="Quick Questionnaire">Quick Questionnaire</h3>
+			<ul>
+				<form>
+					<p>What was your favourite website?</p>
+					<input type="radio" id="time.gov" name="website" value="time.gov">
+					<label for="time.gov">time.gov</label><br>
+					<input type="radio" id="wikipedia.org" name="website" value="wikipedia.org">
+					<label for="wikipedia.org">wikipedia.org</label><br>
+					<input type="radio" id="dannarchy.com" name="website" value="dannarchy.com">
+					<label for="dannarchy.com">dannarchy.com</label><br>
+					
+					<p>Would you go back to any of these websites? Select all that apply.</p>
+					<input type="checkbox" id="time.gov" name="time.gov" value="time.gov">
+					<label for="time.gov">time.gov</label><br>
+					<input type="checkbox" id="wikipedia.org" name="wikipedia.org" value="wikipedia.org">
+					<label for="wikipedia.org">wikipedia.org</label><br>
+					<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+					<label for="vehicle3"> I have a boat</label><br> 
+					
+					<p>Name: <input type="text" name="name"></p>
+					
+					<p>Gender:</p>
+					<div class="small-selection">
+						<select size="4">
+						<option>Male</option>
+						<option>Female</option>
+						<option>Other</option>
+						<option>Multiple</option>
+						</select>
+					</div>
+				</form>
+			</ul>
+		</div>
+		<footer>
+			<hr>
+			Designed by Ben Vokey for <a href="https://uottawa.brightspace.com/d2l/le/content/157905/Home">SEG3125</a>
+		</footer>
+	</body>
 </html>
