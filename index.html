@@ -72,8 +72,16 @@
 						<input type="checkbox" id="dannarchy.com" name="dannarchy.com" value="dannarchy.com">
 						<label for="dannarchy.com">dannarchy.com</label><br><br>
 						
-						<label for="rating">How is this website? (between 1 and 10):</label><br>
-						<input type="range" id="rating" name="rating" min="1" max="10">
+						<label for="rating">How do you like this website?</label>
+						<ul class="likert">
+							<li>Hated it</li>
+							<li><input type="radio" name="likert" value="1" /></li>
+							<li><input type="radio" name="likert" value="2" /></li>
+							<li><input type="radio" name="likert" value="3" /></li>
+							<li><input type="radio" name="likert" value="4" /></li>
+							<li><input type="radio" name="likert" value="5" /></li>
+							<li>Loved it</li>
+						</ul><br>
 						
 						<p>Comments:</p>
 						<textarea rows="7" cols="60"></textarea><br>
