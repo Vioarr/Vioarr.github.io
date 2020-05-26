@@ -83,7 +83,7 @@ header a:hover {
 .small-selection {
 	padding-left: 5px;
 }
-.likert li {
+.likert li{
   float: left;
   list-style-type: none;
 }
