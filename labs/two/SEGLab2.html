@@ -13,7 +13,7 @@
 						<a href="https://vioarr.github.io">~/home</a>
 					</li>
 					<li class="pull-right header-text">
-						the scalp is just a 3D printer for hair
+						what are snails even trying to do?
 					</li>
 				</ul>
 			</nav>
@@ -31,13 +31,11 @@
 				<h3>Client Information</h3>
 				<p>Tell us a bit about you.</p>
 				Choose a Category:
-				<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-					<option value=""/>
-					<option value="None">None</option>
-					<option value="Vegetarian">Vegetarian</option>
-					<option value="GlutenFree">Gluten Free</option>
-					<option value="Organic">Organic</option>
-				</select>
+				<br>
+				<!--<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">-->
+				<input type="checkbox" id="vegetarian" value="vegetarian" onclick="monitorCheckbox(this)">Vegetarian</input><br>
+				<input type="checkbox" id="glutenFree" value="glutenFree" onclick="monitorCheckbox(this)">Gluten Free</input><br>
+				<input type="checkbox" id="organic" value="organic" onclick="monitorCheckbox(this)">Organic</input>
 			</div>
 			
 			<div id="Products" class="tabcontent">
@@ -60,7 +58,7 @@
 			Designed by Ben Vokey for <a href="https://uottawa.brightspace.com/d2l/le/content/157905/Home">SEG3125</a>
 		</footer>
 		
-		<script src="scripts/groceries.js"></script>
 		<script src="scripts/main.js"></script>
+		<script src="scripts/groceries.js"></script>
 	</body>
 </html>			
