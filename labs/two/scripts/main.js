@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices() {
+	productPrice = [];
     var s2 = document.getElementById('displayProduct');
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
