@@ -1,3 +1,4 @@
+var productPrice = [];
 
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
@@ -22,7 +23,12 @@ function openInfo(evt, tabName) {
 
 }
 
-
+//calls populateListProductChoices at page load to reduce strange behaviour of the targeted products
+//also opens client tab by on launch, looks nicer
+document.addEventListener('DOMContentLoaded', function() {
+    populateListProductChoices();
+	openInfo(event, 'Client');
+}, false);
 	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
@@ -41,7 +47,7 @@ function populateListProductChoices() {
 	// <label for="Bread">Bread: 1.99$/label><br>
 	for (i = 0; i < optionArray.length; i++) {
 		var productName = optionArray[i].name;
-		var productPrice = optionArray[i].price;
+		productPrice.push(optionArray[i].price);
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -52,7 +58,7 @@ function populateListProductChoices() {
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName + ": " + productPrice + "$"));
+		label.appendChild(document.createTextNode(productName + ": $" + productPrice[i]));
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
@@ -75,7 +81,7 @@ function selectedItems(){
 	var para = document.createElement("P");
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
-			para.appendChild(document.createTextNode(ele[i].value));
+			para.appendChild(document.createTextNode(ele[i].value + ": $" + productPrice[i]));
 			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
 		}
@@ -83,10 +89,5 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
-		
+	c.appendChild(document.createTextNode("Total Price is: $" + getTotalPrice(chosenProducts)));
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    populateListProductChoices();
-}, false);

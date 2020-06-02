@@ -22,7 +22,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
-		price: 10.00
+		price: 9.99
 	},
 	{
 		name: "bagles",
@@ -36,7 +36,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 2.00
+		price: 2.49
 	},
 	{
 		name: "oranges",
@@ -50,21 +50,21 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 2.50
+		price: 2.59
 	},
 	{
 		name: "strawberries",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 3.50
+		price: 3.59
 	},
 	{
 		name: "kiwi",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 4.00
+		price: 3.99
 	},
 	{
 		name: "honey",
@@ -82,6 +82,8 @@ var products = [
 	}
 ];
 
+//array of categories that every item falls into
+
 var categories = [
 	{
 		id: "vegetarian",
@@ -96,16 +98,16 @@ var categories = [
 		selected: false
 	}
 ];
-	
+
+//monitors checkboxes state and calls the list population function
 function monitorCheckbox(checkbox) {
-var catIndex = categories.findIndex(element => element.id === checkbox.value);
+	var catIndex = categories.findIndex(element => element.id === checkbox.value);
 	categories[catIndex].selected = checkbox.checked;
 	populateListProductChoices();
 }
 
-// given restrictions provided, make a reduced list of products
-// prices should be included in this list, as well as a sort based on price
-//TODO: have flag set to true and when a selected category doesn't include it switch to false
+// given restrictions provided via selected categories, make a reduced list of products
+// prices are included in this list, as well as a sort based on price
 function restrictListProducts(prods) {
 	var prodFlag = true;
 	let products = [];
@@ -137,3 +139,5 @@ function getTotalPrice(chosenProducts) {
 	}
 	return totalPrice;
 }
+
+//fetch the price of a listed item
