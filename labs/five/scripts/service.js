@@ -1,5 +1,5 @@
-var phoneFilled = false;
-var cardFilled = false;
+var phoneFilled = true;
+var cardFilled = true;
 
 // Function to verify that the phone number is correct.
 // Here, I validate for (12345), but you have to change that for a phone validation
@@ -140,6 +140,7 @@ $(document).ready(function(){
     $("#buyform").on("change", function() {
         var b = $("#dateInput").datepicker("getDate") != null;
         var a = !(phoneFilled && cardFilled && b);
+        console.log(a, phoneFilled, cardFilled, b);
         $("#book").prop("disabled", a);
     });
 });

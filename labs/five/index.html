@@ -98,7 +98,7 @@
 
 <!-- This section contains elements to be validated -->
 <!-- Refer to the JavaScript file, where JQuery is used to listen to those inputs using the ids -->
-<div class="container" id="third">
+<div class="container" id="third" style="padding-bottom: 30px;">
    <form id="buyform">
   <h3><img src="images/dollar.png" alt="logo" style="width:40px;">Book a Visit</h3>
   <p>Mechanic: 
@@ -106,13 +106,25 @@
     <option value="0">Steven Sr</option>
     <option value="1">Crazy Steve</option>
     </select>
+    </p>
+    <p>Service:
+    <select>
+    <option>Full tune-up</option>
+    <option>Break repair</option>
+    <option>Clean and checkup</option>
+    </select></p>
   <p>Date: <input type="text" id="dateInput"></p>
   <p>Phone Number: <input placeholder="(XXX) XXX-XXXX" type="text" id="phone"></p>
   <p>Credit Card: <input type="text" id="debit" title="We ask for your 16-digit credit card number in case of no-show, 20$ will be charged."></p>
     <input type="submit" value="Book Now" id="book">
     </form>
 </div>
-
+<footer class="foot">
+  <div class="footer-copyright text-center py-3">
+    <img src="images/pin.png" alt="logo" style="width:30px;">Find us at 343 King Edward, Ottawa, Ontario, P3E 9D3<br>
+    <img src="images/email.png" alt="logo" style="width:30px;"><a href="#third">mumfordbycicles@vianet.ca</a>
+  </div>
+</footer>
 </body>
 </html>
 
