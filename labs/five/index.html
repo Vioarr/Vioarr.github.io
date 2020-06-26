@@ -10,7 +10,7 @@
 
 <!-- The head should contain an appropriate title for your site -->
 <head>
-    <title>Module 5 - Labo</title>
+    <title>Mumford & Sons Cycle Repair</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,7 +49,7 @@
 <!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
 <!-- be sections in your page. -->
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -99,11 +99,18 @@
 <!-- This section contains elements to be validated -->
 <!-- Refer to the JavaScript file, where JQuery is used to listen to those inputs using the ids -->
 <div class="container" id="third">
+   <form id="buyform">
   <h3><img src="images/dollar.png" alt="logo" style="width:40px;">Book a Visit</h3>
-  <p>Mechanic: <select id="mechanicInput" name="Mechanic"><option value="0">Steven Sr</option><option value="1">Crazy Steve</option></select>
+  <p>Mechanic: 
+    <select id="mechanicInput" name="Mechanic">
+    <option value="0">Steven Sr</option>
+    <option value="1">Crazy Steve</option>
+    </select>
   <p>Date: <input type="text" id="dateInput"></p>
-  <p>Phone Number Example <input placeholder="(XXX) XXX-XXXX" type="text" id="phone"></p>
+  <p>Phone Number: <input placeholder="(XXX) XXX-XXXX" type="text" id="phone"></p>
   <p>Credit Card: <input type="text" id="debit" title="We ask for your 16-digit credit card number in case of no-show, 20$ will be charged."></p>
+    <input type="submit" value="Book Now" id="book">
+    </form>
 </div>
 
 </body>

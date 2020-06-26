@@ -1,4 +1,5 @@
-
+var phoneFilled = false;
+var cardFilled = false;
 
 // Function to verify that the phone number is correct.
 // Here, I validate for (12345), but you have to change that for a phone validation
@@ -11,17 +12,14 @@ function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
     // (xxx)xxx-xxxx
     var filter = /^(\([0-9]{3})\)([0-9]{3}-[0-9]{4})$/;
-    if (filter.test(a)) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    phoneFilled = filter.test(a);
+    return filter.test(a);
 }
 //inspired by the function above
 function validateCard(cardNum) {
     var a = document.getElementById(cardNum).value;
     var filter = /^([0-9]{16})$/;
+    cardFilled = filter.test(a);
     return filter.test(a);
 }
 
@@ -31,10 +29,12 @@ function validateCard(cardNum) {
 // Make sure in your version that you associate Days to remove with Experts (e.g. John doesn't work Mondays)
 var unavailableDatesSr = [1,3];
 var unavailableDatesJr = [2,4];
+var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"]
 var mechanic = 0;
 const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
+    var string = jQuery.datepicker.formatDate(setDateFormat, date);
     var day = date.getDay();
     // Sunday is Day 0, disable all Sundays
     
@@ -46,12 +46,14 @@ function disableDates(date) {
         if (unavailableDatesJr.includes(day))
             return[false];
     }
+    return [ unavailableDates.indexOf(string) == -1 ]
 }
 
 
 // HERE, JQuery "LISTENING" starts
 $(document).ready(function(){
 
+        $("#book").prop("disabled", true);
     // phone validation, it calls validatePhone
     // and also some feedback as an Alert + putting a value in the input that shows the format required
     // the "addClass" will use the class "error" defined in style.css and add it to the phone input
@@ -133,6 +135,11 @@ $(document).ready(function(){
           "ui-tooltip": "highlight"
         }
       });
+    
 
-
+    $("#buyform").on("change", function() {
+        var b = $("#dateInput").datepicker("getDate") != null;
+        var a = !(phoneFilled && cardFilled && b);
+        $("#book").prop("disabled", a);
+    });
 });
